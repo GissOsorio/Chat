@@ -1,0 +1,13 @@
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\Logica.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\Logica.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\AccesoADatos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\Datos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\RestSharp.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\AccesoADatos.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\Datos.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\bin\Debug\RestSharp.xml
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\obj\Debug\Anfitrión.csprojAssemblyReference.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\obj\Debug\Anfitrión.csproj.CoreCompileInputs.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\obj\Debug\Anfitrión.csproj.CopyComplete
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\obj\Debug\Logica.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Logica\obj\Debug\Logica.pdb

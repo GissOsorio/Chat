@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Giselita\Desktop\WebService1</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AccesoADatos.dll">
+      <publishTime>02/08/2019 11:49:43</publishTime>
+    </File>
+    <File Include="bin/AccesoADatos.pdb">
+      <publishTime>02/08/2019 11:49:43</publishTime>
+    </File>
+    <File Include="bin/AIMLbot.dll">
+      <publishTime>09/04/2007 20:40:44</publishTime>
+    </File>
+    <File Include="bin/Datos.dll">
+      <publishTime>02/08/2019 11:49:38</publishTime>
+    </File>
+    <File Include="bin/Datos.pdb">
+      <publishTime>02/08/2019 11:49:38</publishTime>
+    </File>
+    <File Include="bin/Logica.dll">
+      <publishTime>04/08/2019 12:29:56</publishTime>
+    </File>
+    <File Include="bin/Logica.pdb">
+      <publishTime>04/08/2019 12:29:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>01/16/2019 12:29:48</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 13:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/28/2018 13:02:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/WCFService.dll">
+      <publishTime>04/08/2019 23:21:27</publishTime>
+    </File>
+    <File Include="bin/WCFService.pdb">
+      <publishTime>04/08/2019 23:21:27</publishTime>
+    </File>
+    <File Include="bin/WebDriver.dll">
+      <publishTime>10/31/2018 09:53:56</publishTime>
+    </File>
+    <File Include="Chat.svc">
+      <publishTime>02/06/2019 22:44:10</publishTime>
+    </File>
+    <File Include="chatbot.png">
+      <publishTime>03/27/2019 21:35:32</publishTime>
+    </File>
+    <File Include="codigoJSc.js">
+      <publishTime>07/30/2019 12:25:32</publishTime>
+    </File>
+    <File Include="jquery-3.3.1.js">
+      <publishTime>11/29/2018 15:19:17</publishTime>
+    </File>
+    <File Include="persona.png">
+      <publishTime>03/27/2019 21:35:19</publishTime>
+    </File>
+    <File Include="Styles.css">
+      <publishTime>07/09/2019 12:45:59</publishTime>
+    </File>
+    <File Include="VentanaChat.html">
+      <publishTime>02/06/2019 22:53:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/08/2019 23:21:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

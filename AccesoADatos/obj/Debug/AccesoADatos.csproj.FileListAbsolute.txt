@@ -1,0 +1,9 @@
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\bin\Debug\AccesoADatos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\bin\Debug\AccesoADatos.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\bin\Debug\Datos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\bin\Debug\Datos.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\obj\Debug\AccesoADatos.csprojAssemblyReference.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\obj\Debug\AccesoADatos.csproj.CoreCompileInputs.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\obj\Debug\AccesoADatos.csproj.CopyComplete
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\obj\Debug\AccesoADatos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\AccesoADatos\obj\Debug\AccesoADatos.pdb

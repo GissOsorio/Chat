@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Administrar" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54787/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54787/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54787/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Datos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdministrar_buscarFilaPorPattern_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorPattern" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorPattern_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorPatternResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarConocimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarConocimiento" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarConocimiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarConocimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarConocimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarConocimiento" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarConocimiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarConocimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarPalabrasClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarPalabrasClave" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarPalabrasClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarPalabrasClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarPalabraClavePorConocimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarPalabraClavePorConocimiento" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarPalabraClavePorConocimiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarPalabraClavePorConocimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarConocimientoTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarConocimientoTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarConocimientoTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarConocimientoTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarConocimientoTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarConocimientoTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarConocimientoTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarConocimientoTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorConocimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorConocimiento" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorConocimiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorConocimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_modificarTemplateProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarTemplateProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_modificarTemplateProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarTemplateProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorId" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_buscarFilaPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarFilaPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_listaTemplatesTopic_InputMessage">
+    <wsdl:part name="parameters" element="tns:listaTemplatesTopic" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_listaTemplatesTopic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaTemplatesTopicResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_modificarTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_modificarTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_eliminarTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_listaTodoslosTemplates_InputMessage">
+    <wsdl:part name="parameters" element="tns:listaTodoslosTemplates" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_listaTodoslosTemplates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaTodoslosTemplatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarListaTemplates_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarListaTemplates" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarListaTemplates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarListaTemplatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_todoslosSemestres_InputMessage">
+    <wsdl:part name="parameters" element="tns:todoslosSemestres" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_todoslosSemestres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:todoslosSemestresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_seleccionarSemestreTexto_InputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarSemestreTexto" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_seleccionarSemestreTexto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:seleccionarSemestreTextoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_semestreSeleccionado_InputMessage">
+    <wsdl:part name="parameters" element="tns:semestreSeleccionado" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_semestreSeleccionado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:semestreSeleccionadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarSemestre_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarSemestre" />
+  </wsdl:message>
+  <wsdl:message name="IAdministrar_insertarSemestre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarSemestreResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdministrar">
+    <wsdl:operation name="buscarFilaPorPattern">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorPattern" message="tns:IAdministrar_buscarFilaPorPattern_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorPatternResponse" message="tns:IAdministrar_buscarFilaPorPattern_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarConocimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/insertarConocimiento" message="tns:IAdministrar_insertarConocimiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/insertarConocimientoResponse" message="tns:IAdministrar_insertarConocimiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarConocimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/eliminarConocimiento" message="tns:IAdministrar_eliminarConocimiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/eliminarConocimientoResponse" message="tns:IAdministrar_eliminarConocimiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarPalabrasClave">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarPalabrasClave" message="tns:IAdministrar_buscarPalabrasClave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarPalabrasClaveResponse" message="tns:IAdministrar_buscarPalabrasClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarPalabraClavePorConocimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarPalabraClavePorConocimiento" message="tns:IAdministrar_buscarPalabraClavePorConocimiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarPalabraClavePorConocimientoResponse" message="tns:IAdministrar_buscarPalabraClavePorConocimiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarConocimientoTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/insertarConocimientoTemplate" message="tns:IAdministrar_insertarConocimientoTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/insertarConocimientoTemplateResponse" message="tns:IAdministrar_insertarConocimientoTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarConocimientoTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/eliminarConocimientoTemplate" message="tns:IAdministrar_eliminarConocimientoTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/eliminarConocimientoTemplateResponse" message="tns:IAdministrar_eliminarConocimientoTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorConocimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorConocimiento" message="tns:IAdministrar_buscarFilaPorConocimiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorConocimientoResponse" message="tns:IAdministrar_buscarFilaPorConocimiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorTemplate" message="tns:IAdministrar_buscarFilaPorTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorTemplateResponse" message="tns:IAdministrar_buscarFilaPorTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarTemplateProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/modificarTemplateProfesor" message="tns:IAdministrar_modificarTemplateProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/modificarTemplateProfesorResponse" message="tns:IAdministrar_modificarTemplateProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorId" message="tns:IAdministrar_buscarFilaPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/buscarFilaPorIdResponse" message="tns:IAdministrar_buscarFilaPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listaTemplatesTopic">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/listaTemplatesTopic" message="tns:IAdministrar_listaTemplatesTopic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/listaTemplatesTopicResponse" message="tns:IAdministrar_listaTemplatesTopic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/insertarTemplate" message="tns:IAdministrar_insertarTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/insertarTemplateResponse" message="tns:IAdministrar_insertarTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/modificarTemplate" message="tns:IAdministrar_modificarTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/modificarTemplateResponse" message="tns:IAdministrar_modificarTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/eliminarTemplate" message="tns:IAdministrar_eliminarTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/eliminarTemplateResponse" message="tns:IAdministrar_eliminarTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listaTodoslosTemplates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/listaTodoslosTemplates" message="tns:IAdministrar_listaTodoslosTemplates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/listaTodoslosTemplatesResponse" message="tns:IAdministrar_listaTodoslosTemplates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarListaTemplates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/insertarListaTemplates" message="tns:IAdministrar_insertarListaTemplates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/insertarListaTemplatesResponse" message="tns:IAdministrar_insertarListaTemplates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="todoslosSemestres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/todoslosSemestres" message="tns:IAdministrar_todoslosSemestres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/todoslosSemestresResponse" message="tns:IAdministrar_todoslosSemestres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarSemestreTexto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/seleccionarSemestreTexto" message="tns:IAdministrar_seleccionarSemestreTexto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/seleccionarSemestreTextoResponse" message="tns:IAdministrar_seleccionarSemestreTexto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="semestreSeleccionado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/semestreSeleccionado" message="tns:IAdministrar_semestreSeleccionado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/semestreSeleccionadoResponse" message="tns:IAdministrar_semestreSeleccionado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarSemestre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministrar/insertarSemestre" message="tns:IAdministrar_insertarSemestre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministrar/insertarSemestreResponse" message="tns:IAdministrar_insertarSemestre_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdministrar" type="tns:IAdministrar">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="buscarFilaPorPattern">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarFilaPorPattern" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarConocimiento">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/insertarConocimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarConocimiento">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/eliminarConocimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPalabrasClave">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarPalabrasClave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPalabraClavePorConocimiento">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarPalabraClavePorConocimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarConocimientoTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/insertarConocimientoTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarConocimientoTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/eliminarConocimientoTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorConocimiento">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarFilaPorConocimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarFilaPorTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarTemplateProfesor">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/modificarTemplateProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarFilaPorId">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/buscarFilaPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaTemplatesTopic">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/listaTemplatesTopic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/insertarTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/modificarTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/eliminarTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaTodoslosTemplates">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/listaTodoslosTemplates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarListaTemplates">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/insertarListaTemplates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="todoslosSemestres">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/todoslosSemestres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="seleccionarSemestreTexto">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/seleccionarSemestreTexto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="semestreSeleccionado">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/semestreSeleccionado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarSemestre">
+      <soap:operation soapAction="http://tempuri.org/IAdministrar/insertarSemestre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Administrar">
+    <wsdl:port name="BasicHttpBinding_IAdministrar" binding="tns:BasicHttpBinding_IAdministrar">
+      <soap:address location="http://localhost:54787/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

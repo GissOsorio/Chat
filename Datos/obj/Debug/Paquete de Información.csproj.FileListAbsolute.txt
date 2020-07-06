@@ -1,0 +1,6 @@
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\bin\Debug\Datos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\bin\Debug\Datos.pdb
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\obj\Debug\Paquete de Información.csprojAssemblyReference.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\obj\Debug\Paquete de Información.csproj.CoreCompileInputs.cache
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\obj\Debug\Datos.dll
+C:\Users\Giselita\Documents\Visual Studio 2017\AppChatbot\Datos\obj\Debug\Datos.pdb
